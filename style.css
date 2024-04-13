@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*
+        Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+        Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+        Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+        Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+        Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+        Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+        Gradients
+        These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+        Light Magenta: hsl(293, 100%, 63%)
+        Light Violet: hsl(264, 100%, 61%)
+        Secondary
+        White: hsl(0, 0%, 100%)
+        Light Grayish Violet (app background): hsl(270, 20%, 96%)
+        Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+        Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+    */
+    --clr-text-sub-heading: hsl(276, 100%, 81%);
+    --clr-text-message-from: hsl(276, 55%, 52%);
+    --clr-text-message-to: hsl(271, 15%, 43%);
+    --clr-text-placeholder: hsl(206, 6%, 79%);
+    --clr-text-heading: hsl(271, 36%, 24%);
+    --clr-text-paragraph: hsl(270, 7%, 64%);
+    --clr-gradient-main-light: hsl(293, 100%, 63%);
+    --clr-gradient-main-dark: hsl(264, 100%, 61%);
+    --clr-base: hsl(0, 0%, 100%);
+    --clr-bg-app: hsl(270, 20%, 96%);
+    --clr-bg-button-submit: hsl(271, 36%, 24%);
+    --clr-outline-radio-button: hsl(289, 100%, 72%);
+    --fw-light: 400;
+    --fw-normal: 500;
+    --fw-bold: 700;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    font-weight: var(--fw-normal);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* --- */
