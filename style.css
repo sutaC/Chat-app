@@ -145,6 +145,7 @@ img {
     max-width: 65%;
     font-size: 0.7rem;
     font-weight: var(--fw-light);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .message.from {
@@ -163,7 +164,60 @@ img {
     background-color: var(--clr-base);
     color: var(--clr-text-message-to);
     align-self: flex-end;
+}
+
+.gallery {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.gallery img {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 0.5rem;
+    object-fit: cover;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        var(--clr-gradient-main-light),
+        var(--clr-gradient-main-dark)
+    );
+    color: var(--clr-base);
+    padding: 0.6rem;
+    border-radius: 0.75rem;
+    border-bottom-left-radius: 0.25rem;
+    max-width: 80%;
+}
+
+.offer p {
+    margin: 0;
+    font-weight: var(--fw-light);
+    font-size: 0.75rem;
+}
+
+.messageBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    background-color: var(--clr-base);
+    font-size: 0.7rem;
+    color: var(--clr-text-placeholder);
+    font-weight: var(--fw-light);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.messageBox p {
+    margin: 0;
 }
 
 main {
