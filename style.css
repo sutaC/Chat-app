@@ -117,7 +117,7 @@ img {
     mask-size: contain;
 }
 
-/* --- */
+/* --- Main --- */
 
 .phone {
     width: 20rem;
@@ -326,6 +326,8 @@ footer a {
     color: var(--clr-text-message-from);
 }
 
+/* --- Desktop --- */
+
 @media (width >= 700px) {
     body {
         padding: 0;
@@ -345,4 +347,67 @@ footer a {
     .phone {
         scale: 0.9;
     }
+}
+
+/* --- Animations --- */
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content {
+    --_animation-time: 400ms;
+}
+
+.content > * {
+    opacity: 0;
+    animation: var(--_animation-name) var(--_animation-time) ease
+        calc(var(--_animation-time) * var(--_count, 0)) forwards;
+}
+
+.content :where(.offer, .message.from) {
+    --_animation-name: slideInLeft;
+}
+
+.content :where(.message.to, .gallery) {
+    --_animation-name: slideInRight;
+}
+
+.content :nth-child(1) {
+    --_count: 0;
+}
+.content :nth-child(2) {
+    --_count: 1;
+}
+.content :nth-child(3) {
+    --_count: 2;
+}
+.content :nth-child(4) {
+    --_count: 3;
+}
+.content :nth-child(5) {
+    --_count: 4;
+}
+.content :nth-child(6) {
+    --_count: 5;
+}
+.content :nth-child(7) {
+    --_count: 6;
+}
+.content :nth-child(8) {
+    --_count: 7;
 }
